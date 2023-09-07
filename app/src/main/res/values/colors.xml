@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="cream">#EDC6BA</color>
+
+    <color name="purple_200">#1B5363</color>
+    <color name="purple_500">#2196F3</color>
+    <color name="purple_700">#2196F3</color>
+    <color name="teal_200">#2196F3</color>
+    <color name="teal_700">#2196F3</color>
+
+    <color name="apps_color">#2196F3</color>
+
+    <color name="atomic_steel_blue">#F0F1F1</color>
+    <color name="seagull_blue">#769ABE</color>
+
+</resources>
