@@ -1,0 +1,93 @@
+{
+  "project_info": {
+    "project_number": "570001018533",
+    "firebase_url": "https://coaching-management-2836e-default-rtdb.firebaseio.com",
+    "project_id": "coaching-management-2836e",
+    "storage_bucket": "coaching-management-2836e.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:570001018533:android:4a95f1814d0edc6adc474c",
+        "android_client_info": {
+          "package_name": "com.trodev.mycoaching"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "570001018533-048kvgjsrf1l19e03tkm1cs1l2faj4re.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.trodev.mycoaching",
+            "certificate_hash": "8d1016c6362bffee31705cec487888642de4d798"
+          }
+        },
+        {
+          "client_id": "570001018533-10prg4sn88us1v7ka1kgksip1n6a54hm.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD-fu1gUfkK3Z4LmDP_293i33LzY_yJKow"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "570001018533-10prg4sn88us1v7ka1kgksip1n6a54hm.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:570001018533:android:3d0a58a1b6ae0769dc474c",
+        "android_client_info": {
+          "package_name": "com.trodev.mycoachingstudents"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "570001018533-hjbrm1ndsspg8jcak3000o6lt6g72lll.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.trodev.mycoachingstudents",
+            "certificate_hash": "c3732c7bad4bbaedbf7cb09ae1e609e540ab1a05"
+          }
+        },
+        {
+          "client_id": "570001018533-v7qqv7ridlk70djk1n3ju4hcgjdt7du4.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.trodev.mycoachingstudents",
+            "certificate_hash": "8ee4b8fa3dc09c7875caa614799bdd7a2d7f5817"
+          }
+        },
+        {
+          "client_id": "570001018533-10prg4sn88us1v7ka1kgksip1n6a54hm.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD-fu1gUfkK3Z4LmDP_293i33LzY_yJKow"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "570001018533-10prg4sn88us1v7ka1kgksip1n6a54hm.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
