@@ -10,9 +10,12 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.LinearLayout;
 
+import com.trodev.mycoachingstudents.question.QuestionActivity;
+import com.trodev.mycoachingstudents.syllabus.SyllabusActivity;
+
 public class HomeFragment extends Fragment {
 
-    LinearLayout examsyllabus;
+    LinearLayout examsyllabus, questionLl;
 
     public HomeFragment() {
         // Required empty public constructor
@@ -26,6 +29,7 @@ public class HomeFragment extends Fragment {
 
         /*init views*/
         examsyllabus = view.findViewById(R.id.examsyllabus);
+        questionLl = view.findViewById(R.id.questionLl);
 
         /*click on listener*/
         examsyllabus.setOnClickListener(new View.OnClickListener() {
@@ -34,6 +38,14 @@ public class HomeFragment extends Fragment {
                 startActivity(new Intent(getContext(), SyllabusActivity.class));
             }
         });
+
+        questionLl.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(getContext(), QuestionActivity.class));
+            }
+        });
+
 
         return view;
     }

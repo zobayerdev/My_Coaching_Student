@@ -1,4 +1,4 @@
-package com.trodev.mycoachingstudents.syllabus;
+package com.trodev.mycoachingstudents.question;
 
 import android.os.Bundle;
 
@@ -19,28 +19,29 @@ import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
 import com.trodev.mycoachingstudents.R;
+import com.trodev.mycoachingstudents.syllabus.SyllabusAdapter;
+import com.trodev.mycoachingstudents.syllabus.SyllabusData;
 
 import java.util.ArrayList;
 import java.util.List;
 
-
-public class ClassSixFragment extends Fragment {
+public class QuestionNineFragment extends Fragment {
 
     private RecyclerView recyclerView;
-    private DatabaseReference reference, referenceSeven, referenceEight;
+    private DatabaseReference reference;
     private List<SyllabusData> list;
     private SyllabusAdapter adapter;
     ProgressBar progressBar;
 
-    public ClassSixFragment() {
-        // Required empty public constructor
+    public QuestionNineFragment() {
+
     }
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        View view = inflater.inflate(R.layout.fragment_class_six, container, false);
+        View view = inflater.inflate(R.layout.fragment_question_nine, container, false);
 
         /*init views*/
         recyclerView = view.findViewById(R.id.recyclerView);
@@ -48,15 +49,16 @@ public class ClassSixFragment extends Fragment {
         progressBar.setVisibility(View.VISIBLE);
 
         /*database path*/
-        reference = FirebaseDatabase.getInstance().getReference().child("syllabus").child("syllabus_class_six/");
+        reference = FirebaseDatabase.getInstance().getReference().child("questions").child("question_class_nine/");
 
         /*load data*/
-        loadSyllabus();
+        loadQuestions();
 
         return view;
     }
 
-    private void loadSyllabus() {
+
+    private void loadQuestions() {
 
         reference.addValueEventListener(new ValueEventListener() {
             @Override
@@ -82,4 +84,5 @@ public class ClassSixFragment extends Fragment {
         });
 
     }
+
 }

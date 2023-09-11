@@ -4,13 +4,13 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    tools:context=".syllabus.ClassSevenFragment">
+    tools:context=".question.QuestionHscFragment">
 
     <TextView
         android:id="@+id/text"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Class Seven"
+        android:text="Class HSC"
         android:textColor="@color/black"
         android:fontFamily="@font/zilla_slab_semi_bold"
         android:gravity="center"

@@ -1,4 +1,4 @@
-package com.trodev.mycoachingstudents;
+package com.trodev.mycoachingstudents.question;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.viewpager.widget.ViewPager;
@@ -6,9 +6,9 @@ import androidx.viewpager.widget.ViewPager;
 import android.os.Bundle;
 
 import com.google.android.material.tabs.TabLayout;
-import com.trodev.mycoachingstudents.syllabus.ViewPagerAdapter;
+import com.trodev.mycoachingstudents.R;
 
-public class SyllabusActivity extends AppCompatActivity {
+public class QuestionActivity extends AppCompatActivity {
 
     TabLayout tab;
     ViewPager viewPager;
@@ -16,19 +16,17 @@ public class SyllabusActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_syllabus);
+        setContentView(R.layout.activity_question);
 
-        getSupportActionBar().setTitle("Exam Syllabus");
+        getSupportActionBar().setTitle("Exam Question");
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
         tab = findViewById(R.id.tab);
         viewPager = findViewById(R.id.viewPager);
 
-        ViewPagerAdapter adapter = new ViewPagerAdapter(getSupportFragmentManager());
+        QuestionPagerAdapter adapter = new QuestionPagerAdapter(getSupportFragmentManager());
         viewPager.setAdapter(adapter);
 
         tab.setupWithViewPager(viewPager);
-
     }
-
 }
