@@ -25,13 +25,11 @@
         <activity
             android:name=".question.QuestionViewActivity"
             android:exported="false"
-            android:parentActivityName=".question.QuestionActivity"
-            />
+            android:parentActivityName=".question.QuestionActivity" />
         <activity
             android:name=".question.QuestionActivity"
             android:exported="false"
-            android:parentActivityName=".MainActivity"
-            />
+            android:parentActivityName=".MainActivity" />
         <activity
             android:name=".syllabus.SyllabusViewActivity"
             android:exported="false"
