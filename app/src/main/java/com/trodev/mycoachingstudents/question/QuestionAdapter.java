@@ -30,7 +30,7 @@ public class QuestionAdapter extends RecyclerView.Adapter<QuestionAdapter.Questi
     @Override
     public QuestionViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
 
-        View view = LayoutInflater.from(context).inflate(R.layout.syllabus_item_layout,parent,false);
+        View view = LayoutInflater.from(context).inflate(R.layout.exam_item_layout,parent,false);
 
         return new QuestionViewHolder(view);
     }
@@ -38,7 +38,7 @@ public class QuestionAdapter extends RecyclerView.Adapter<QuestionAdapter.Questi
     @Override
     public void onBindViewHolder(@NonNull QuestionViewHolder holder, int position) {
 
-        holder.ebookName.setText(list.get(position).getPdfTitle());
+        holder.examEt.setText(list.get(position).getPdfTitle());
 
         holder.itemView.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -51,7 +51,9 @@ public class QuestionAdapter extends RecyclerView.Adapter<QuestionAdapter.Questi
         });
 
 
-        holder.ebookDownload.setOnClickListener(new View.OnClickListener() {
+        /*pdf downloader method*/
+        /*it's make by me*/
+        holder.questionDownload.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent download = new Intent(Intent.ACTION_VIEW);
@@ -69,15 +71,15 @@ public class QuestionAdapter extends RecyclerView.Adapter<QuestionAdapter.Questi
 
     public class QuestionViewHolder extends RecyclerView.ViewHolder {
 
-        private TextView ebookName;
-        private ImageView ebookDownload;
+        private TextView examEt;
+        private ImageView questionDownload;
 
         public QuestionViewHolder(@NonNull View itemView) {
             super(itemView);
 
             /*init views from data layout*/
-            ebookName = itemView.findViewById(R.id.ebookName);
-            ebookDownload = itemView.findViewById(R.id.ebookDownload);
+            examEt = itemView.findViewById(R.id.examEt);
+            questionDownload = itemView.findViewById(R.id.questionDownload);
         }
     }
 }

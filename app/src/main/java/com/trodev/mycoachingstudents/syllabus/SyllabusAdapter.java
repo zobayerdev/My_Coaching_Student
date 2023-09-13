@@ -35,7 +35,7 @@ public class SyllabusAdapter extends RecyclerView.Adapter<SyllabusAdapter.EbookV
     @Override
     public void onBindViewHolder(@NonNull EbookViewHolder holder, int position) {
 
-        holder.ebookName.setText(list.get(position).getPdfTitle());
+        holder.syllabusEt.setText(list.get(position).getPdfTitle());
 
         holder.itemView.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -47,7 +47,7 @@ public class SyllabusAdapter extends RecyclerView.Adapter<SyllabusAdapter.EbookV
         });
 
 
-        holder.ebookDownload.setOnClickListener(new View.OnClickListener() {
+        holder.syllabusDownload.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent download = new Intent(Intent.ACTION_VIEW);
@@ -67,14 +67,14 @@ public class SyllabusAdapter extends RecyclerView.Adapter<SyllabusAdapter.EbookV
 
     public class EbookViewHolder extends RecyclerView.ViewHolder {
 
-        private TextView ebookName;
-        private ImageView ebookDownload;
+        private TextView syllabusEt;
+        private ImageView syllabusDownload;
 
         public EbookViewHolder(@NonNull View itemView) {
             super(itemView);
 
-            ebookName = itemView.findViewById(R.id.ebookName);
-            ebookDownload = itemView.findViewById(R.id.ebookDownload);
+            syllabusEt = itemView.findViewById(R.id.syllabusEt);
+            syllabusDownload = itemView.findViewById(R.id.syllabusDownload);
 
         }
     }

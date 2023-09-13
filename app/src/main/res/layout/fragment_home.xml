@@ -137,7 +137,7 @@
                             android:layout_width="45dp"
                             android:layout_height="45dp"
                             android:layout_gravity="center"
-                            android:src="@drawable/ic_syllabus" />
+                            android:src="@drawable/syllabus" />
 
                     </com.google.android.material.card.MaterialCardView>
 
@@ -172,7 +172,7 @@
                             android:layout_width="45dp"
                             android:layout_height="45dp"
                             android:layout_gravity="center"
-                            android:src="@drawable/ic_exam_question" />
+                            android:src="@drawable/exam_question" />
 
                     </com.google.android.material.card.MaterialCardView>
 
@@ -208,7 +208,7 @@
                             android:layout_width="45dp"
                             android:layout_height="45dp"
                             android:layout_gravity="center"
-                            android:src="@drawable/ic_question_solve" />
+                            android:src="@drawable/solve" />
 
                     </com.google.android.material.card.MaterialCardView>
 

@@ -29,8 +29,8 @@ public class QuestionSixFragment extends Fragment {
 
     private RecyclerView recyclerView;
     private DatabaseReference reference;
-    private List<SyllabusData> list;
-    private SyllabusAdapter adapter;
+    private List<QuestionData> list;
+    private QuestionAdapter adapter;
     ProgressBar progressBar;
 
     public QuestionSixFragment() {
@@ -66,12 +66,12 @@ public class QuestionSixFragment extends Fragment {
 
                 list = new ArrayList<>();
                 for (DataSnapshot snapshot : dataSnapshot.getChildren()) {
-                    SyllabusData data = snapshot.getValue(SyllabusData.class);
+                    QuestionData data = snapshot.getValue(QuestionData.class);
                     list.add(data);
                 }
 
                 progressBar.setVisibility(View.GONE);
-                adapter = new SyllabusAdapter(getContext(), list);
+                adapter = new QuestionAdapter(getContext(), list);
                 recyclerView.setLayoutManager(new LinearLayoutManager(getContext()));
                 recyclerView.setAdapter(adapter);
             }
