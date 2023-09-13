@@ -27,7 +27,7 @@ import java.util.List;
 public class ClassSixFragment extends Fragment {
 
     private RecyclerView recyclerView;
-    private DatabaseReference reference, referenceSeven, referenceEight;
+    private DatabaseReference reference;
     private List<SyllabusData> list;
     private SyllabusAdapter adapter;
     ProgressBar progressBar;
