@@ -1,4 +1,4 @@
-package com.trodev.mycoachingstudents;
+package com.trodev.mycoachingstudents.fragments;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -10,6 +10,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.LinearLayout;
 
+import com.trodev.mycoachingstudents.R;
 import com.trodev.mycoachingstudents.question.QuestionActivity;
 import com.trodev.mycoachingstudents.syllabus.SyllabusActivity;
 

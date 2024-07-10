@@ -2,10 +2,11 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
 
 <group android:checkableBehavior="single">
+
     <item
-        android:id="@+id/menu_student"
-        android:icon="@drawable/ic_profile"
-        android:title="Student Profile" />
+        android:id="@+id/menu_logout"
+        android:icon="@drawable/ic_logout"
+        android:title="Log out" />
 
     <item
         android:id="@+id/menu_notification"

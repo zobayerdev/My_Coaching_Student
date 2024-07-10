@@ -13,8 +13,13 @@
         android:title="Lecture Sheets" />
 
     <item
+        android:id="@+id/menu_photos"
+        android:icon="@drawable/ic_photos"
+        android:title="Photos" />
+
+    <item
         android:id="@+id/menu_about"
-        android:icon="@drawable/ic_about"
+        android:icon="@drawable/ic_profiles"
         android:title="About Us" />
 
 </menu>

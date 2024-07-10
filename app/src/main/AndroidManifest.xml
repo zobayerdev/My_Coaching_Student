@@ -22,7 +22,10 @@
         android:usesCleartextTraffic="true"
         tools:targetApi="31">
         <activity
-            android:name=".SigninActivity"
+            android:name=".auth_activity.SignUpActivity"
+            android:exported="false" />
+        <activity
+            android:name=".auth_activity.SigninActivity"
             android:exported="false" />
         <activity
             android:name=".question.QuestionViewActivity"
@@ -40,21 +43,25 @@
             android:name=".syllabus.SyllabusActivity"
             android:exported="false"
             android:parentActivityName=".MainActivity" />
-        <activity
-            android:name=".SplashActivity"
-            android:exported="true" />
+
         <activity
             android:name=".PrivacyPolicy"
             android:exported="true"
             android:parentActivityName=".MainActivity" />
         <activity
             android:name=".MainActivity"
+            android:exported="true"/>
+
+        <activity
+            android:name=".SplashActivity"
             android:exported="true">
+
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+
         </activity>
 
         <meta-data

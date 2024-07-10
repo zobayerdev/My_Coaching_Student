@@ -22,6 +22,12 @@ import android.view.Window;
 import android.widget.Toast;
 
 import com.google.android.material.navigation.NavigationView;
+import com.google.firebase.auth.FirebaseAuth;
+import com.trodev.mycoachingstudents.auth_activity.SigninActivity;
+import com.trodev.mycoachingstudents.fragments.HomeFragment;
+import com.trodev.mycoachingstudents.fragments.LectureFragment;
+import com.trodev.mycoachingstudents.fragments.PhotosFragment;
+import com.trodev.mycoachingstudents.fragments.ProfileFragment;
 
 import java.util.Objects;
 
@@ -108,10 +114,23 @@ public class MainActivity extends AppCompatActivity {
                 }
 
                 if (i == 2) {
-                    setTitle("About us");
+                    setTitle("Photos");
                     FragmentManager fragmentManager = getSupportFragmentManager();
                     FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
-                    fragmentTransaction.replace(R.id.frameLayout, new AboutusFragment());
+                    fragmentTransaction.replace(R.id.frameLayout, new PhotosFragment());
+                    fragmentTransaction.commit();
+
+                    /*set all status bar, navigation bar, toolbar color*/
+                    smoothBottomBar.setBarBackgroundColor(Color.parseColor("#2196F3"));
+                    getWindow().setNavigationBarColor(Color.parseColor("#2196F3"));
+                    getWindow().setStatusBarColor(Color.parseColor("#2196F3"));
+                }
+
+                if (i == 3) {
+                    setTitle("Profile");
+                    FragmentManager fragmentManager = getSupportFragmentManager();
+                    FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
+                    fragmentTransaction.replace(R.id.frameLayout, new ProfileFragment());
                     fragmentTransaction.commit();
 
                     /*set all status bar, navigation bar, toolbar color*/
@@ -137,6 +156,11 @@ public class MainActivity extends AppCompatActivity {
         if (itemId == R.id.menu_notification) {
             Toast.makeText(this, "Notification", Toast.LENGTH_SHORT).show();
 
+        } else if (itemId == R.id.menu_logout) {
+            FirebaseAuth.getInstance().signOut();
+            startActivity(new Intent(MainActivity.this, SigninActivity.class));
+            Toast.makeText(MainActivity.this, "log-out successful", Toast.LENGTH_SHORT).show();
+            MainActivity.this.finishAffinity();
         } else if (itemId == R.id.menu_privacy) {
             Toast.makeText(this, "Privacy Policy", Toast.LENGTH_SHORT).show();
             startActivity(new Intent(MainActivity.this, PrivacyPolicy.class));
