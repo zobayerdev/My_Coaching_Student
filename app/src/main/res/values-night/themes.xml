@@ -1,7 +1,59 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
     <!-- Base application theme. -->
-    <style name="Base.Theme.MyCoachingStudents" parent="Theme.Material3.DayNight.NoActionBar">
-        <!-- Customize your dark theme here. -->
-        <!-- <item name="colorPrimary">@color/my_dark_primary</item> -->
+    <style name="Base.Theme.MyCoachingStudents" parent="Theme.MaterialComponents.DayNight.DarkActionBar.Bridge">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/apps_color</item>
+        <item name="colorPrimaryVariant">@color/apps_color</item>
+        <item name="colorOnPrimary">@color/white</item>
+
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/apps_color</item>
+        <item name="colorSecondaryVariant">@color/apps_color</item>
+        <item name="colorOnSecondary">@color/black</item>
+
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor">?attr/colorPrimaryVariant</item>
     </style>
+
+    <style name="DialogAnimation">
+        <item name="android:windowEnterAnimation">@anim/slide_in_bottom</item>
+        <item name="android:windowExitAnimation">@anim/slide_out_bottom</item>
+    </style>
+
+    <!--navigation menu font family-->
+    <style name="NavigationMenuViewStyle" parent="android:Widget.TextView">
+        <item name="android:fontFamily">@font/poppins_regular</item>
+    </style>
+
+    <!-- ProgressBar Color. -->
+    <style name="ProgressBar">
+        <item name="colorSecondary">@color/black</item>
+    </style>
+
+    <style name="fontfamily" parent="TextAppearance.Design.Tab">
+        <item name="android:fontFamily">@font/poppins_regular</item>
+    </style>
+
+    <style name="fontfamilys" parent="TextAppearance.Design.Tab">
+        <item name="android:fontFamily">@font/kalpurush</item>
+    </style>
+
+    <style name="Circular">
+        <item name="cornerSize">50%</item>
+    </style>
+
+    <style name="ShapeAppearanceOverlay.CardView" parent="">
+        <item name="cornerFamilyBottomLeft">rounded</item>
+        <item name="cornerFamilyBottomRight">rounded</item>
+        <item name="cornerSizeTopLeft">8%</item>
+        <item name="cornerSizeTopRight">8%</item>
+    </style>
+
+    <!--button background if dark mode on-->
+    <!--button-->
+    <style name="BUTTON">
+        <item name="android:background">@color/apps_color</item>
+        <item name="android:textColor">#FFFFFF</item>
+    </style>
+
 </resources>

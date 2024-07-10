@@ -21,7 +21,9 @@
         android:theme="@style/Theme.MyCoachingStudents"
         android:usesCleartextTraffic="true"
         tools:targetApi="31">
-
+        <activity
+            android:name=".SigninActivity"
+            android:exported="false" />
         <activity
             android:name=".question.QuestionViewActivity"
             android:exported="false"
